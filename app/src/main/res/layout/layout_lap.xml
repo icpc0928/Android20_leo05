@@ -23,7 +23,7 @@
         android:layout_weight="4"
         android:layout_height="wrap_content"
         android:text="0:00:00.34"
-        android:textSize="32sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:gravity="center"
         />
@@ -33,7 +33,7 @@
         android:layout_weight="4"
         android:layout_height="wrap_content"
         android:text="0:34:23.56"
-        android:textSize="32sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:gravity="center"
         />
