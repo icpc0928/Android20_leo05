@@ -7,9 +7,10 @@
     >
 
     <TextView
-    android:layout_width="0dp"
-    android:layout_weight="1.5"
-    android:layout_height="wrap_content"
+        android:id="@+id/lap_rank"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
         android:text="lap 1"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -17,20 +18,22 @@
         android:layout_gravity="center"
     />
     <TextView
+        android:id="@+id/lap_time1"
         android:layout_width="0dp"
         android:layout_weight="4"
         android:layout_height="wrap_content"
         android:text="0:00:00.34"
-        android:textSize="36sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         android:gravity="center"
         />
     <TextView
+        android:id="@+id/lap_time2"
         android:layout_width="0dp"
         android:layout_weight="4"
         android:layout_height="wrap_content"
         android:text="0:34:23.56"
-        android:textSize="36sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         android:gravity="center"
         />

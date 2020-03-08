@@ -9,8 +9,11 @@ import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
+import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +26,12 @@ public class MainActivity extends AppCompatActivity {
     private Counter counter; //每次都是一個週期任務
     private TextView clock;
     private UIHander uiHander = new UIHander();
+
     private ListView listView;
+    private SimpleAdapter adapter;
+    private LinkedList<HashMap<String,String>> data;
+    private String[] from = {"lap","time1","time2"};
+    private int[] to = {R.id.lap_rank,R.id.lap_time1,R.id.lap_time2};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +50,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initLap(){
-
+        //初始化lap的動作
+        adapter = new SimpleAdapter(this,data,R.layout.layout_lap,from,to);
+        listView.setAdapter(adapter);
     }
 
     private void changeDisplay(){
